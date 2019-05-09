@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="/css/app.css">
+    <link href="https://fonts.googleapis.com/css?family=Cormorant+Infant:400,400i,500,500i&amp;subset=cyrillic" rel="stylesheet">
+</head>
+<body>
+    <section id="section1" class="first-section">
+        <img class="start-kupid1" src="/img/black-kupid.png">
+        <img class="start-kupid2" src="/img/black-kupid1.png">
+        <button id="btn1" class="ok_btn btn" onclick="game.switchSections(game.section1, game.section2, game.input)">Начать игру</button>
+    </section>
+    <section id="section2" class="second-section">
+        <form id="form1" class="enter-name" onsubmit="game.nameYourSelf(event)" action="">
+            <label for="name">Назови своё имя:</label>
+            <input required min="4" id="name" name="name" type="text">
+            <button class="send-name_btn btn" id="btn2">Отправить</button>
+        </form>
+        <span class="error" id="error1"></span>
+    </section>
+    <section id="section3-nik" class="third-section nik">
+        <img class="text-figure" src="/img/text-figure.png">
+        <img class="main-kupid" src="/img/main-kupid.png">
+        <p class="nik-text">
+            Приветствую, Никита.
+            Я украл Ленино сердце, и тебе придётся постараться, чтобы его вернуть.
+            Где-то среди этих сердец есть то, которое тебе нужно, и только по-настоящему любящий может пронзить его стрелой купидона.
+            Тогда Лена будет любить тебя ещё сильнее.
+            Но за каждую мою стрелу, не достигшую цели, тебе придётся подарить ей жвачку Love Is.
+        </p>
+        <button id="btn3-nik" onclick="game.switchSections(game.section3nik, game.section4, game.inputShot)" class="ok_btn btn">Идёт!</button>
+    </section>
+    <section id="section3-lena" class="third-section lena">
+        <img class="text-figure" src="/img/text-figure.png">
+        <img class="main-kupid" src="/img/main-kupid.png">
+        <p class="lena-text">
+            Приветствую, Лена! <br> Сегодня я украл Никитино сердце, но я готов отдать его тебе, если пронзишь его моей стрелой. <br>
+            Среди этих сердец спрятано Никитино. Можешь стрелять столько, сколько нужно, но за каждую стрелу, не достигшую цели,
+            нужно будет подарить ему жвачку Love Is.
+        </p>
+        <button id="btn3-lena" onclick="game.switchSections(game.section3lena, game.section4, game.inputShot)" class="ok_btn btn">Вперёд!</button>
+    </section>
+    <section id="section4" class="fourth-section">
+        <img class="hearts" src="/img/hearts.png">
+        <p class="shot-text">В какое из семи сердец хочешь выстрелить? </p>
+        <input required min="1" onfocus="this.value=''" id="shot-field" name="shot" type="number">
+        <button class="shot_btn btn" id="btn4" onclick="game.shoot()">Выстрелить</button>
+        <span class="error" id="error2"></span>
+        <img class="bow" src="/img/bow-arrows.png">
+    </section>
+    <section id="section5" class="fifth-section">
+        <img class="text-figure" src="/img/text-figure.png">
+        <p class="this-is-it">Вот оно!</p>
+        <img class="heruvim" src="/img/heruvim.png">
+    </section>
+    <section id="section6" class="sixth-section">
+        <img class="kupid-result" src="/img/kupid-on-cloud.png">
+        <span id="result"></span>
+	      <button class="again-btn btn" id="btn5" onclick="location.reload();">Сыграть еще раз</button>
+    </section>
+    <script src="/js/app.js"></script>
+</body>
+</html>

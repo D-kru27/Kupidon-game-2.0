@@ -1,0 +1,12 @@
+.second-section {
+  @extend %fcc;
+  display: none;
+
+  .enter-name {
+    box-sizing: border-box;
+    width: 200px;
+    height: 150px;
+    @extend %fsac;
+    border: 1px solid black;
+  }
+}

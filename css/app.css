@@ -1,0 +1,134 @@
+body {
+  font-family: 'Cormorant Infant', serif;
+  font-weight: bold;
+  font-size: larger; }
+
+section {
+  position: relative;
+  display: none;
+  width: 800px;
+  height: 600px;
+  border: 1px solid black; }
+  section .error {
+    box-sizing: border-box;
+    display: block;
+    height: 40px;
+    padding-top: 10px; }
+
+p {
+  text-align: center; }
+
+.btn {
+  font-family: inherit;
+  font-weight: inherit;
+  font-size: inherit; }
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+
+.first-section, .second-section, .third-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column; }
+
+.second-section .enter-name, .fourth-section {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: column; }
+
+.first-section {
+  display: flex; }
+  .first-section img {
+    transform: rotate(3deg); }
+  .first-section .start-kupid1 {
+    width: 200px;
+    position: absolute;
+    left: 85px;
+    top: 125px; }
+  .first-section .start-kupid2 {
+    width: 165px;
+    position: absolute;
+    right: 105px;
+    bottom: 80px; }
+
+.second-section {
+  display: none; }
+  .second-section .enter-name {
+    box-sizing: border-box;
+    width: 200px;
+    height: 150px;
+    border: 1px solid black; }
+
+.third-section {
+  display: none; }
+  .third-section .text-figure {
+    position: absolute;
+    width: 650px;
+    left: 135px;
+    top: 65px; }
+  .third-section .main-kupid {
+    position: absolute;
+    left: 70px;
+    bottom: 55px; }
+  .third-section .ok_btn {
+    position: absolute;
+    bottom: 150px;
+    right: 190px;
+    width: 85px;
+    height: 30px; }
+
+#section3-nik .nik-text {
+  position: absolute;
+  width: 500px;
+  top: 84px;
+  right: 85px; }
+
+#section3-lena .lena-text {
+  position: absolute;
+  width: 520px;
+  top: 75px;
+  right: 80px;
+  line-height: 1.4; }
+
+.fourth-section {
+  display: none;
+  box-sizing: border-box;
+  padding-top: 60px;
+  padding-bottom: 20px; }
+  .fourth-section .bow {
+    width: 600px; }
+
+.fifth-section {
+  display: none; }
+  .fifth-section .text-figure {
+    width: 400px;
+    position: absolute;
+    right: 80px;
+    top: 45px; }
+  .fifth-section .this-is-it {
+    position: absolute;
+    top: 65px;
+    right: 225px;
+    font-size: xx-large; }
+  .fifth-section .heruvim {
+    width: 300px;
+    position: absolute;
+    left: 50px;
+    bottom: 30px; }
+
+.sixth-section {
+  display: none;
+  justify-content: flex-start;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 50px;
+  box-sizing: border-box; }
+  .sixth-section .kupid-result {
+    width: 400px;
+    margin-bottom: 30px; }
+  .sixth-section #result {
+    margin-bottom: 10px; }

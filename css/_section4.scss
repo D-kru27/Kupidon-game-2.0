@@ -1,0 +1,11 @@
+.fourth-section {
+  @extend %fsac;
+  display: none;
+  box-sizing: border-box;
+  padding-top: 60px;
+  padding-bottom: 20px;
+
+  .bow {
+    width: 600px;
+  }
+}

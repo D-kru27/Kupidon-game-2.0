@@ -1,0 +1,48 @@
+
+.third-section {
+  @extend %fcc;
+  display: none;
+
+  .text-figure {
+    position: absolute;
+    width: 650px;
+    left: 135px;
+    top: 65px;
+  }
+
+  .main-kupid {
+    position: absolute;
+    left: 70px;
+    bottom: 55px;
+  }
+
+  .ok_btn {
+    position: absolute;
+    bottom: 150px;
+    right: 190px;
+    width: 85px;
+    height: 30px;
+  }
+}
+
+#section3-nik {
+
+  .nik-text {
+    position: absolute;
+    width: 500px;
+    top: 84px;
+    right: 85px;
+  }
+}
+
+#section3-lena {
+
+  .lena-text {
+    position: absolute;
+    width: 520px;
+    top: 75px;
+    right: 80px;
+    line-height: 1.4;
+  }
+}
+

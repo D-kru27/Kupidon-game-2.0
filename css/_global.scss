@@ -1,0 +1,37 @@
+body {
+  @extend %fc;
+  font: {
+    family: 'Cormorant Infant', serif;
+    weight: bold;
+    size: larger;
+  }
+}
+
+section {
+  position: relative;
+  display: none;
+  width: 800px;
+  height: 600px;
+  border: 1px solid black;
+
+  .error {
+    box-sizing: border-box;
+    display: block;
+    height: 40px;
+    padding-top: 10px;
+  }
+}
+
+p {
+  text-align: center;
+}
+
+.btn {
+  font: {
+    family: inherit;
+    weight: inherit;
+    size: inherit;
+  }
+}
+
+
